@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+    text-align: center;
+    
+}
+
+.introduccion{
+    text-align: center;
+}
+
+body{
+    background-color: white;
+}
+
+nav{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #25528A;
+    font-size: 25px;
+    height: 130px;
+        
+}
+
+.logo{
+    width: 120px;
+    height: 120px;
+    margin-left: 30px;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: flex ;
+    align-items: center;
+}
+
+.menu-horizontal > li > a{
+    display:block;
+    padding: 50px 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-vertical{
+    position: fixed;
+    display: none;
+    list-style:none;
+    width: 300px;
+    background-color: #25528A;
+    z-index: 100;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: inline-block;
+    
+}
+
+.menu-vertical li:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-vertical li a{
+    display: block;
+    color: white;
+    padding:  15px 15px 18px 20px;
+    text-decoration: none;
+    height: 80px;
+}
+
+nav a:hover{
+    color:deeppink;
+    background-color: white
+}
+.carrusel{
+    width: 100%;
+    max-width: 100%;
+    margin: 10px auto 0;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+.carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+ .carrusel li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.carrusel img{
+    width: 100%;
+    margin-top: 0px;
+    height: auto;
+}
+
+.piedepagina p{
+    padding: 20px;
+    background-color: #6d97ca;
+}
+
+
+@keyframes slide {
+    0%{ margin-left: 0%;}
+    20%{ margin-left: 0%;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+
+    75%{ margin-left: -300%;}
+    100%{ margin-left: -300%;}
+
+}
+
+@media (max-width: 991px) {
+    body {
+        padding: 30px;
+    }
+
+    .slider-box {
+        width: 100%;
+    }
+}
+
+h1{
+    text-align:center;
+    margin-top: 50px;
+    background-color:#25528A;
+    color: white ;
+    padding: 35px;
+    border-radius: 15px;
+    margin-left: 460px;
+    margin-right: 460px;
+}
+
+.introduccion{
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 35px;
+    background-color:#25528A;
+    padding: 50px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:100px;
+}
+.card{
+    width:325px;
+    background-color:#25528A;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0px 2px 4px rgba(0, 0, 0,0 .2);
+margin:20px;
+}
+.card img{
+    width:100%;
+    height: auto;
+}
+.card-content{
+    padding:16px;
+}
+.card-content h2{
+ text-align: center;
+ margin-bottom: 20px;
+}
+.card-content p{
+    color:#ffffff;
+    font-size:15px;
+    line-height:1.3;
+}
+.card-content .btn{
+    display: inline-block;
+    padding:8px 16px;
+    background-color:#333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+    color: #fff;
+}
+
+.medellin{
+    text-align: center;
+    margin-left: 150px;
+    margin-right:500px;
+    margin-top: 35px;
+    background-color: #5e9640;
+    padding: 50px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.segundo-titulo{
+    text-align:center;
+    margin-top: 50px;
+    background-color:#554b72;
+    color: white ;
+    padding: 35px;
+    border-radius: 15px;
+    margin-left: 300px;
+    margin-right: 550px;
+}
+
+.cascada img{
+   margin-left: 960px;
+   width: 25%;
+   margin-top: -450px;   
+   border-radius: 20px;
+}
+ 
+.metro{
+    text-align:center;
+    margin-top: 50px;
+    background-color: #25528A;
+    color: white ;
+    padding: 35px;
+    border-radius: 15px;
+    margin-left: 300px;
+    margin-right: 550px;
+    margin-top: -90px;
+}
+
+.metrocabletitulo{
+    text-align:center;
+    margin-top: 50px;
+    background-color:#25528A;
+    color: white ;
+    padding: 35px;
+    border-radius: 15px;
+    margin-left: 190px;
+    margin-right: 900px;
+    margin-top: -70px; 
+}
+
+.tranviatitulo{
+    text-align:center;
+    background-color:#25528A;
+    color: white;
+    padding: 35px;
+    border-radius: 15px;
+    margin-left: 550px;
+    margin-right: 550px;
+    margin-top: -116px; 
+}
+
+.tranviainfo{
+    text-align: center;
+    margin-left: 510px;
+    margin-right: 495px;
+    margin-top: -472px;
+    background-color: #8c96b6;
+    padding: 50px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 100px; 
+}
+
+.metroinfo{
+    text-align: center;
+    margin-left: 150px;
+    margin-right:500px;
+    margin-top: 35px;
+    background-color: #529967;
+    padding: 50px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.metro-info2{
+    text-align: center;
+    margin-left: 150px;
+    margin-right:870px;
+    margin-top: 35px;
+    background-color: #8c96b6;
+    padding: 50px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 100px; 
+}
+
+.metrocable{
+    margin-left: 975px;
+    border-radius: 100px;
+    margin-top: -370px;
+}
+
+.tranvia{
+   border-radius: 15px;
+   margin-left: 920px ;
+   margin-top: -290px;
+}
+
+.extra{
+    display: none;
+}
+
+input[type="checkbox"]{
+    height: 2em;
+    display: block;
+    appearance: none;
+}
+
+label{
+    position: relative;
+    padding: 1em;
+    background-color: rgb(63, 168, 168);
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+label::before{
+    content: 'Read more';
+}
+
+input[type="checkbox"]:checked ~ label::before{
+    content: 'Read leas';
+}
+
+.dots:has(~ input[type="checkbox"]:checked){
+    display: none;
+}
+
+.extra:has(~input[type="checkbox"]:checked){
+    display: inline;
+}
+
